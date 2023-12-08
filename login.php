@@ -1,8 +1,8 @@
 <?php
 
 $host = 'localhost';
-$dbuser = 'root';
-$dbpassword = '';
+$dbuser = 'jw98';
+$dbpassword = 'vHspWxO4R@5]lH@N';
 $dbname = 'study';
 
 if (isset($_REQUEST['login'])) {
@@ -25,10 +25,10 @@ if (isset($_REQUEST['login'])) {
         if ($password == $row['password']) {
             echo "Login successful";
         } else {
-            echo "Invalid email or password";
+            echo "이메일 또는 패스워드가 틀렸습니다.";
         }
     } else {
-        echo "Invalid email or password";
+        echo "이메일 또는 패스워드가 틀렸습니다.";
     }
 
     $conn->close();
