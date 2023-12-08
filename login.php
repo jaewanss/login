@@ -9,7 +9,7 @@ if (isset($_REQUEST['login'])) {
     $email = $_REQUEST['email'];
     $password = $_REQUEST['password'];
 
-    // 데이터베이스 연결
+    // 데이터베이스 연결..
     $conn = new mysqli($host, $dbuser, $dbpassword, $dbname);
 
     // 연결 확인
